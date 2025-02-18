@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            overflow: scroll;
+        }
+     .box{
+            width: 230px;
+            min-height: 290px;
+            max-height: 290px;
+            background-color: rgb(109, 103, 103);
+            background-image: url(pizza.jpg);
+            background-size: cover;
+            color: white;
+        border-radius: 8%;
+    margin: 4px; 
+                 }
+     .heading{
+        margin-top: 5px;
+        margin-left: 28px;
+        text-shadow: 0 0 25px white;
+     }
+     .sub{
+        margin-top: 2px;
+        margin-left: 15px;
+        font-size: 15px;
+     }
+     .but{
+         background-color: green;
+        margin-left: 136px;
+        margin-top: 20px;
+       padding: 4px;
+        border: none;
+        border-radius: 3px;
+     }
+     .sa{
+        margin-left: 85px;
+        margin-top: 2px;
+     }
+     .box1{
+        width: 230px;
+            min-height: 290px;
+            max-height: 290px;
+            background-color: rgb(109, 103, 103);
+            background-image: url(burger.png);
+            background-size: cover;
+            color: white;
+        border-radius: 8%;
+        margin: 4px; 
+     }
+     .sub1{
+       
+        margin-left: 15px;
+        font-size: 15px;
+     }
+     .but1{
+        background-color: green;
+        margin-left: 136px;
+        margin-top: 2px;
+       padding: 4px;
+        border: none;
+        border-radius: 3px;
+     }
+     .box2{
+        width: 230px;
+            min-height: 290px;
+            max-width: 290px;
+            background-color: rgb(109, 103, 103);
+            background-image: url(donuts.png);
+            background-size: cover;
+            color: white;
+        border-radius: 8%;
+        margin: 4px; 
+     }
+     .but2{
+        background-color: green;
+        margin-left: 136px;
+        margin-top: 9px;
+       padding: 4px;
+        border: none;
+        border-radius: 3px;
+     }
+     @media(max-width:800px){
+              .container{
+                flex-direction:column;
+                align-items: center;
+              }    
+              .but1{
+                padding: 5px;
+              }
+              .but{
+                padding: 5px;
+              }
+              .but2{
+                padding: 5px;
+              }
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 class="heading">PIZZA</h2>
+            <p class="sub">Best place to satisfy your tummy</p>
+            <p class="sa">Up to 50% OFF</p>
+           <button class="but">Order Now -> </button>
+       </div>
+        <div class="box1">
+            <h2 class="heading"> Super Delicious BURGER</h2>
+        <p class="sub1">Up to 70% OFF</p>
+        <button class="but1">Order Now -> </button>
+        </div>
+        <div class="box2">
+            <h2 class="heading">LIMITED TIME OFFER</h2>
+            <p class="sub">Up to 30% OFF on DONUTS</p>
+            <button class="but2">Order Now -> </button>
+      </div>
+    </div>
+</body>
+</html>

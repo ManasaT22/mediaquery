@@ -16,8 +16,8 @@
             background-color: aqua;
             padding: 5px;
             display: flex;
-            justify-content: center;
-            align-items: start;
+            justify-content: space-evenly;
+            gap: 8px;
             overflow: scroll;
         }
      .box{
@@ -28,8 +28,7 @@
             background-image: url(pizza.jpg);
             background-size: cover;
             color: white;
-        border-radius: 8%;
-    margin: 4px; 
+        border-radius: 8%; 
                  }
      .heading{
         margin-top: 5px;
@@ -62,7 +61,6 @@
             background-size: cover;
             color: white;
         border-radius: 8%;
-        margin: 4px; 
      }
      .sub1{
        
@@ -80,13 +78,12 @@
      .box2{
         width: 230px;
             min-height: 290px;
-            max-width: 290px;
+            max-height: 290px;
             background-color: rgb(109, 103, 103);
             background-image: url(donuts.png);
             background-size: cover;
             color: white;
-        border-radius: 8%;
-        margin: 4px; 
+        border-radius: 8%; 
      }
      .but2{
         background-color: green;
@@ -111,6 +108,18 @@
                 padding: 5px;
               }
      }
+          @media(max-width:500px){
+            .container{
+                flex-direction: row;
+            }
+            .heading{
+                font-size: 15px;
+            }
+            button{
+                padding: 6px;
+                font-size: 8px;
+            }
+        }
     </style>
 </head>
 <body>
